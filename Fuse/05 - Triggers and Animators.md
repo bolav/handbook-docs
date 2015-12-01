@@ -510,6 +510,12 @@ Launches the default maps app, given a latitude/longitude pair.
 
 	<LaunchMaps Latitude="35.673813", Longitude="-36.780810" />
 
+### $(Call)
+
+Calls a phone number.
+
+	<Call Number="+47 911 36 168" />
+
 ## WebView-specific triggers & actions
 
 ### $(PageBeginLoading)
