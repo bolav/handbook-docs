@@ -504,6 +504,12 @@ Launches the default email app, and starts composing a message.
 - `Subject` – The subject of the email
 - `Message` – The body text of the email
 
+### $(LaunchMaps)
+
+Launches the default maps app, given a latitude/longitude pair.
+
+	<LaunchMaps Latitude="35.673813", Longitude="-36.780810" />
+
 ## WebView-specific triggers & actions
 
 ### $(PageBeginLoading)
