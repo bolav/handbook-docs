@@ -490,6 +490,20 @@ For instance, the following code launches an app in the Google Play Store:
 	<LaunchUri Uri="market://details?id=your.package.name" />
 
 
+### $(LaunchEmail)
+
+Launches the default email app, and starts composing a message.
+
+	<LaunchEmail To="contact@fusetools.com" />
+
+`LaunchEmail` accepts the following properties:
+
+- `To` – The email address(es) of the recipient
+- `CarbonCopy` – The email address(es) of whom to send a carbon copy
+- `BlindCarbonCopy` – The email address(es) of whom to send a blind carbon copy
+- `Subject` – The subject of the email
+- `Message` – The body text of the email
+
 ## WebView-specific triggers & actions
 
 ### $(PageBeginLoading)
