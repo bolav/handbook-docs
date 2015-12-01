@@ -476,7 +476,7 @@ AUTH: TODO: Do we need to discuss Z-ordering? -->
 
 ## Native actions
 
-<!-- TODO: Add quick introduction -->
+Fuse comes with a set of actions that invoke OS-specific behavior, such as dialing a phone number or vibrating the device.
 
 ### $(LaunchUri)
 
