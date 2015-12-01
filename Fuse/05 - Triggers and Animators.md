@@ -516,6 +516,12 @@ Calls a phone number.
 
 	<Call Number="+47 911 36 168" />
 
+### $(Vibrate)
+
+Vibrates the device for a given amount of time.
+
+	<Vibrate Duration="0.8" />
+
 ## WebView-specific triggers & actions
 
 ### $(PageBeginLoading)
