@@ -474,6 +474,22 @@ This example shows how to use `BringIntoView` to make a @(ScrollView) automatica
 <!--  ### $(BringToFront)
 AUTH: TODO: Do we need to discuss Z-ordering? -->
 
+## Native actions
+
+<!-- TODO: Add quick introduction -->
+
+### $(LaunchUri)
+
+Requests the operating system to launch an URI.
+
+	<LaunchUri Uri="https://www.fusetools.com" />
+
+Since the underlying OS is handling the request, this is not limited to HTTP or HTTPS.
+For instance, the following code launches an app in the Google Play Store:
+
+	<LaunchUri Uri="market://details?id=your.package.name" />
+
+
 ## WebView-specific triggers & actions
 
 ### $(PageBeginLoading)
