@@ -508,7 +508,7 @@ Launches the default email app, and starts composing a message.
 
 Launches the default maps app, given a latitude/longitude pair.
 
-	<LaunchMaps Latitude="35.673813", Longitude="-36.780810" />
+	<LaunchMaps Latitude="35.673813" Longitude="-36.780810" />
 
 ### $(Call)
 
