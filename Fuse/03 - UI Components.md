@@ -325,7 +325,14 @@ There are 6 different properties that can be used to control this in different w
 
 Note that using for example both @(StartAngle) and @(StartAngleDegrees) on the same @(Circle) will have an undefined behavior.
 
-### $(Fill:Fills)
+### Styling a shape
+
+In order to style shapes, we provide two elements:
+
+* `Fill` - Styles the background of a shape
+* `Stroke` - Styles the border of a shape
+
+#### $(Fill:Fills)
 
 We've seen that shapes accept simple `Fill` properties:
 
@@ -348,7 +355,7 @@ It is possible to use other kinds of brushes to fill shapes. For example:
 
 Here, we created a `Circle` that has been filled with an `ImageFill`-brush, great for creating a typical profile picture in a social app. Then under it, we created a @(Rectangle) that has a nice and subtle `LinearGradient`.
 
-### $(Stroke:Strokes)
+#### $(Stroke:Strokes)
 
 Strokes accept a brush the same way a @(Fill) does:
 
@@ -375,7 +382,7 @@ It can also be set to be a @(SolidColor:SolidColor-brush) using the `Brush`-prop
 	</Rectangle>
 
 
-#### $(StrokeAlignment)
+##### $(StrokeAlignment)
 
 The @(Stroke) can be aligned:
 
@@ -383,7 +390,7 @@ The @(Stroke) can be aligned:
 
 Valid values are `Center`, `Inside` and `Outside`.
 
-#### $(Stroke.Offset)
+##### $(Stroke.Offset)
 
 The @(Stroke) of a @(Shapes:Shape) can be `Offset`:
 
@@ -394,11 +401,11 @@ The @(Stroke) of a @(Shapes:Shape) can be `Offset`:
 A positive `Offset` will make the `Stroke` appear outside the `Shape` while a negative `Offset` will make it appear inside.
 
 
-## Brushes
+### Brushes
 
-Fuse comes with different brush types that can be used as @(Stroke) and @(Fill) in @(Shapes).
+While @(Fill) and $(Stroke) specifies where the styling is to be done, we use brushes to do the actual coloring
 
-### $(SolidColor)
+#### $(SolidColor)
 
 If you want to make a simple continuous color, you can use a `SolidColor`:
 
@@ -423,7 +430,7 @@ Note that this is equivalent of writing:
 If you ever want to know if a `SolidColor` is completely transparent or not, the property `IsCompletelyTransparent` will be true if the alpha value of the color is 0.
 
 
-### $(ImageFill)
+#### $(ImageFill)
 
 You could fill a @(Shapes:Shape) with an image using the @(Image) component and the `Layer` property, like this example:
 
@@ -439,7 +446,7 @@ However, it is a bit verbose. Because filling a background with an image is so c
 </Circle>
 ```
 
-### $(LinearGradient)
+#### $(LinearGradient)
 
 You can describe a `LinearGradient`-brush using `LinearGradient` and `GradientStop`. For example, to create a grey ramp that is white in the top and black in the bottom:
 
