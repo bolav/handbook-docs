@@ -432,13 +432,7 @@ If you ever want to know if a `SolidColor` is completely transparent or not, the
 
 #### $(ImageFill)
 
-You could fill a @(Shapes:Shape) with an image using the @(Image) component and the `Layer` property, like this example:
-
-```
-<Image Layer="Background"/>
-```
-
-However, it is a bit verbose. Because filling a background with an image is so common, we therefore provide a wrapper for this case called `ImageFill`. It has all the common property of the `Image` component, but will automatically fill the background of the parent component. The following example will fill a `Circle` component with an image loaded from the file `Portrait.png`:
+`ImageFill` is a @(Brush) that fills the parent @(Shape) with an image. It has all the common properties of the `Image` component, but supports less stretching modes than `Image` does. The following example will fill a `Circle` component with an image loaded from the file `Portrait.png`:
 
 ```
 <Circle Width="160" Height="160">
