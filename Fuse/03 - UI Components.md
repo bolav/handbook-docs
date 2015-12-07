@@ -416,13 +416,19 @@ Note that this is equivalent of writing:
 
 ### $(ImageFill)
 
-You can fill a @(Shapes:Shape) with an image using `ImageFill`:
+You could fill a @(Shapes:Shape) with an image using the `Image` component and the `Layer` property, like this example:
 
-	<Circle Width="160" Height="160">
-		<ImageFill File="Portrait.png" />
-	</Circle>
+```
+<Image Layer="Background"/>
+```
 
-The same way @(Image) allows you to, `ImageFill` lets you set @(StretchMode).
+However, it is a bit verbose. Because filling a background with an image is so common, we therefore provide a wrapper for this case called `ImageFill`. It has all the common property of the `Image` component, but will automatically fill the background of the parent component. The following example will fill a `Circle` component with an image loaded from the file `Portrait.png`:
+
+```
+<Circle Width="160" Height="160">
+	<ImageFill File="Portrait.png" />
+</Circle>
+```
 
 ### $(LinearGradient)
 
