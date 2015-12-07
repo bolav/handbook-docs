@@ -402,17 +402,26 @@ Fuse comes with different brush types that can be used as @(Stroke) and @(Fill) 
 
 If you want to make a simple continuous color, you can use a `SolidColor`:
 
-	<SolidColor Color="#00f" />
+```
+<SolidColor Color="#00f" />
+```
 
 This will create a brush that can be assigned to any place that accepts a brush, for example a @(Rectangle):
 
-	<Rectangle>
-		<SolidColor Color="#00f" />
-	</Rectangle>
-
+```
+<Rectangle>
+	<SolidColor Color="#00f" />
+</Rectangle>
+```
+	
 Note that this is equivalent of writing:
 
-	<Rectangle Fill="#00f" />
+```
+<Rectangle Fill="#00f" />
+```
+
+If you ever want to know if a `SolidColor` is completely transparent or not, the property `IsCompletelyTransparent` will be true if the alpha value of the color is 0.
+
 
 ### $(ImageFill)
 
