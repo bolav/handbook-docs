@@ -416,7 +416,7 @@ Note that this is equivalent of writing:
 
 ### $(ImageFill)
 
-You could fill a @(Shapes:Shape) with an image using the `Image` component and the `Layer` property, like this example:
+You could fill a @(Shapes:Shape) with an image using the @(Image) component and the `Layer` property, like this example:
 
 ```
 <Image Layer="Background"/>
